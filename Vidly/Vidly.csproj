@@ -203,10 +203,24 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701111105470_InitialModel.cs" />
+    <Compile Include="Migrations\201701111105470_InitialModel.Designer.cs">
+      <DependentUpon>201701111105470_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701111111482_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\201701111111482_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>201701111111482_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701111124328_AddMembershipType.cs" />
+    <Compile Include="Migrations\201701111124328_AddMembershipType.Designer.cs">
+      <DependentUpon>201701111124328_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -286,6 +300,17 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201701111105470_InitialModel.resx">
+      <DependentUpon>201701111105470_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701111111482_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>201701111111482_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701111124328_AddMembershipType.resx">
+      <DependentUpon>201701111124328_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

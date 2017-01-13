@@ -231,9 +231,34 @@
     <Compile Include="Migrations\201701121723314_SetNameOfMemberShipTypes.Designer.cs">
       <DependentUpon>201701121723314_SetNameOfMemberShipTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701130925165_AddBirthdateToCustomer.cs" />
+    <Compile Include="Migrations\201701130925165_AddBirthdateToCustomer.Designer.cs">
+      <DependentUpon>201701130925165_AddBirthdateToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130950264_fechaNac.cs" />
+    <Compile Include="Migrations\201701130950264_fechaNac.Designer.cs">
+      <DependentUpon>201701130950264_fechaNac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130952347_Movie.cs" />
+    <Compile Include="Migrations\201701130952347_Movie.Designer.cs">
+      <DependentUpon>201701130952347_Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130954127_MovieRequiredNameAndGenre.cs" />
+    <Compile Include="Migrations\201701130954127_MovieRequiredNameAndGenre.Designer.cs">
+      <DependentUpon>201701130954127_MovieRequiredNameAndGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701131001249_AddGenreAndMovieCamp.cs" />
+    <Compile Include="Migrations\201701131001249_AddGenreAndMovieCamp.Designer.cs">
+      <DependentUpon>201701131001249_AddGenreAndMovieCamp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701131002343_InsertGenre.cs" />
+    <Compile Include="Migrations\201701131002343_InsertGenre.Designer.cs">
+      <DependentUpon>201701131002343_InsertGenre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -305,6 +330,7 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -338,6 +364,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701121723314_SetNameOfMemberShipTypes.resx">
       <DependentUpon>201701121723314_SetNameOfMemberShipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130925165_AddBirthdateToCustomer.resx">
+      <DependentUpon>201701130925165_AddBirthdateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130950264_fechaNac.resx">
+      <DependentUpon>201701130950264_fechaNac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130952347_Movie.resx">
+      <DependentUpon>201701130952347_Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130954127_MovieRequiredNameAndGenre.resx">
+      <DependentUpon>201701130954127_MovieRequiredNameAndGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701131001249_AddGenreAndMovieCamp.resx">
+      <DependentUpon>201701131001249_AddGenreAndMovieCamp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701131002343_InsertGenre.resx">
+      <DependentUpon>201701131002343_InsertGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

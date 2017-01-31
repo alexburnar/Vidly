@@ -22,6 +22,8 @@ namespace Vidly.Controllers
 
         public ActionResult New()
         {
+            var membershipTypes = _context.MembershipTypes.ToList();
+
             return View();
         }
 

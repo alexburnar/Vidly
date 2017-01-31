@@ -2,7 +2,9 @@
 using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
+using Vidly.Migrations;
 using Vidly.Models;
+using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
@@ -23,8 +25,11 @@ namespace Vidly.Controllers
         public ActionResult New()
         {
             var membershipTypes = _context.MembershipTypes.ToList();
-
-            return View();
+            var viewModel = new CustomerFormViewModel
+            {
+                MembershipTypes = membershipTypes
+            };
+            return View(viewModel);
         }
 
         public ViewResult Index()
